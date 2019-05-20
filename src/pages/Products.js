@@ -42,13 +42,13 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    addProductToCart: product => dispatch(addProductToCart(product))
-  };
-};
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addProductToCart: product => dispatch(addProductToCart(product))
+//   };
+// };
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  {addProductToCart}
 )(ProductsPage);

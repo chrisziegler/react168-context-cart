@@ -8,7 +8,7 @@ import './Cart.css';
 class CartPage extends Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <MainNavigation cartItemNumber={this.props.cartItemCount} />
         <main className="cart">
           {this.props.cartItems.length <= 0 && <p>No Item in the Cart!</p>}
@@ -16,16 +16,10 @@ class CartPage extends Component {
             {this.props.cartItems.map(cartItem => (
               <li key={cartItem.id}>
                 <div>
-                  <strong>{cartItem.title}</strong> - ${cartItem.price} (
-                  {cartItem.quantity})
+                  <strong>{cartItem.title}</strong> - ${cartItem.price} ({cartItem.quantity})
                 </div>
                 <div>
-                  <button
-                    onClick={this.props.removeProductFromCart.bind(
-                      this,
-                      cartItem.id
-                    )}
-                  >
+                  <button onClick={this.props.removeProductFromCart.bind(this, cartItem.id)}>
                     Remove from Cart
                   </button>
                 </div>
@@ -33,7 +27,7 @@ class CartPage extends Component {
             ))}
           </ul>
         </main>
-      </React.Fragment>
+      </>
     );
   }
 }
@@ -47,13 +41,15 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    removeProductFromCart: id => dispatch(removeProductFromCart(id))
-  };
-};
+// Instead I  use the "object shorthand" form of mapDispatchToProps below
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     removeProductFromCart: id => dispatch(removeProductFromCart(id))
+//   };
+// };
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  // mapDispatchToProps
+  { removeProductFromCart }
 )(CartPage);
