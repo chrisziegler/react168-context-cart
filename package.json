@@ -1,5 +1,5 @@
 {
-  "name": "redux-vs-context",
+  "name": "react-context-cart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
