@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -17,9 +17,11 @@ Original prepared redux example prepared by Maximilian Schwarzmüller in this [R
 
 Code and design refactored for React 16.8.6, and features added by -CZ.
 
-### Also `npm test`, `npm run build`, `npm run eject`
+#### Other scripts:
 
-## Helpful Documents
+`npm test`, `npm run build`, `npm run eject`
+
+### Helpful Documents:
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
