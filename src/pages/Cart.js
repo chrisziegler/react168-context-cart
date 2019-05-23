@@ -5,12 +5,8 @@ import MainNavigation from '../components/MainNavigation';
 import './Cart.css';
 
 class CartPage extends Component {
-  static contextType = ShopContext;
-
   // contextType allows lifecycle methods and gives you this.context
-  componentDidMount() {
-    console.log(this.context);
-  }
+  static contextType = ShopContext;
   render() {
     return (
       <>
@@ -24,6 +20,9 @@ class CartPage extends Component {
           <ul>
             {this.context.cart.map(cartItem => (
               <li key={cartItem.id}>
+                <div>
+                  <img src={`images/${cartItem.cover}`} width="50" alt="book cover" />
+                </div>
                 <div>
                   <strong>{cartItem.title}</strong> - ${cartItem.price} ({cartItem.quantity})
                 </div>

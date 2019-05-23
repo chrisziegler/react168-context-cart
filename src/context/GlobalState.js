@@ -5,17 +5,16 @@ export default class GlobalState extends Component {
   // state is where we manage the data we pass down to context
   state = {
     products: [
-      { id: 'p1', title: 'Gaming Mouse', price: 29.99 },
-      { id: 'p2', title: 'Harry Potter 3', price: 9.99 },
-      { id: 'p3', title: 'Used plastic bottle', price: 0.99 },
-      { id: 'p4', title: 'Half-dried plant', price: 2.99 }
+      { id: 'p1', title: 'The Oracle Year - A Novel', price: 12.08, cover: 'TheOracle.jpg' },
+      { id: 'p2', title: 'The Book of M', price: 11.41, cover: 'BookOfM.jpg' },
+      { id: 'p3', title: 'The Gone Year', price: 11.95, cover: 'TheGoneYear.jpg' },
+      { id: 'p4', title: 'Semiosis', price: 12.78, cover: 'Semiosis.jpg' }
     ],
     cart: [],
     cartSum: 0
   };
 
   addProductToCart = product => {
-    console.log('Adding product', product);
     const updatedCart = [...this.state.cart];
     const updatedItemIndex = updatedCart.findIndex(item => item.id === product.id);
 
@@ -34,7 +33,6 @@ export default class GlobalState extends Component {
   };
 
   removeProductFromCart = productId => {
-    console.log('Removing product with id: ' + productId);
     const updatedCart = [...this.state.cart];
     const updatedItemIndex = updatedCart.findIndex(item => item.id === productId);
 

@@ -20,6 +20,9 @@ class ProductsPage extends Component {
                 {context.products.map(product => (
                   <li key={product.id}>
                     <div>
+                      <img src={`images/${product.cover}`} width="85" alt="book cover" />
+                    </div>
+                    <div>
                       <strong>{product.title}</strong> - ${product.price}
                     </div>
                     <div>

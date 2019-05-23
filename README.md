@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## React 16.8.6 | Context API - store with cart
 
-<img src="src/images/books.jpg" width=700 alt="Panorama of library books"/>
+<img src="public/images/books.jpg" width=700 alt="Panorama of library books"/>
 
 ### Available Scripts
 

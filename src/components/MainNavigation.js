@@ -8,6 +8,9 @@ const mainNavigation = props => (
     <nav>
       <ul>
         <li>
+          <NavLink to="/">Sci-fi Selections</NavLink>
+        </li>
+        <li>
           <NavLink to="/">Products</NavLink>
         </li>
         <li>
