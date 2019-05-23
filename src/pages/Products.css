@@ -13,9 +13,8 @@
 .products li {
   padding: 1rem;
   margin: 1rem 0;
-  border: 1px solid #00179b;
+  border: 1px solid goldenrod;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-

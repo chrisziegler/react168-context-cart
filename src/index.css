@@ -7,13 +7,13 @@ body {
   font-family: sans-serif;
 }
 
-
 button {
   font: inherit;
   padding: 0.25rem 0.5rem;
-  background: #00179b;
-  color: white;
+  background: rebeccapurple;
+  color: rgb(255, 255, 255);
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -23,5 +23,5 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #df6d02;
+  background: rgb(72, 27, 117);
 }
