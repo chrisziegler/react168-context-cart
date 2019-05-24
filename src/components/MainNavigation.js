@@ -8,7 +8,7 @@ const mainNavigation = props => (
     <nav>
       <ul>
         <li>
-          <NavLink to="/">Sci-fi Selections</NavLink>
+          <span>Sci-fi Selections</span>
         </li>
         <li>
           <NavLink to="/">Products</NavLink>

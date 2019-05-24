@@ -23,7 +23,7 @@
   border: 1px solid rgb(0, 0, 0, 0.1);
 }
 .cart li:nth-child(odd) {
-  background-color: aliceblue;
+  background-color: rgb(241, 240, 240);
 }
 
 img {

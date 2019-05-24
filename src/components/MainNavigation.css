@@ -20,11 +20,14 @@
   flex-grow: 1;
   font-size: 1.5rem;
   font-style: italic;
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px #000;
 }
 
-.main-navigation nav li:first-child a {
-  color: navajowhite;
-}
+/* .main-navigation nav li:first-child a {
+  color: whitesmoke;
+  text-shadow: 1px 1px 2px #000;
+} */
 
 .main-navigation a {
   display: block;

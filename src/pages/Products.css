@@ -20,10 +20,11 @@
 }
 
 .products li:nth-child(odd) {
-  background-color: aliceblue;
+  background-color: rgb(241, 240, 240);
 }
 
 img {
+  cursor: pointer;
   -webkit-box-shadow: 0 6px 4px -4px rgb(80, 80, 80);
   -moz-box-shadow: 0 6px 4px -4px rgb(80, 80, 80);
   box-shadow: 0 6px 4px -4px rgb(80, 80, 80);

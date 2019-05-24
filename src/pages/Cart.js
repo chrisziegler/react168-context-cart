@@ -21,7 +21,7 @@ class CartPage extends Component {
             {this.context.cart.map(cartItem => (
               <li key={cartItem.id}>
                 <div>
-                  <img src={`images/${cartItem.cover}`} width="50" alt="book cover" />
+                  <img src={`images/${cartItem.cover}`} height="65" alt="book cover" />
                 </div>
                 <div>
                   <strong>{cartItem.title}</strong> - ${cartItem.price} ({cartItem.quantity})

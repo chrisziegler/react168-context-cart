@@ -7,36 +7,18 @@ body {
   font-family: sans-serif;
 }
 
-/* button {
-  font: inherit;
-  padding: 0.25rem 0.5rem;
-  background: rgb(252, 192, 28);
-  color: rgb(53, 52, 52);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover,
-button:active {
-  background: rgb(253, 209, 86);
-} */
-
 button {
   background: #fdb416;
-  color: rgb(73, 73, 73);
-  font-weight: 600;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
   box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.05);
 }
 
 button:hover {
-  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2), 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 button:focus {

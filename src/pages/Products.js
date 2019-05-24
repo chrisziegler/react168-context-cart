@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import ShopContext from '../context/shop-context';
 import MainNavigation from '../components/MainNavigation';
 import './Products.css';
@@ -20,14 +21,20 @@ class ProductsPage extends Component {
                 {context.products.map(product => (
                   <li key={product.id}>
                     <div>
-                      <img src={`images/${product.cover}`} width="85" alt="book cover" />
+                      <img src={`images/${product.cover}`} height="100" alt={product.title} />
                     </div>
                     <div>
                       <strong>{product.title}</strong> - ${product.price}
                     </div>
                     <div>
                       <button onClick={context.addProductToCart.bind(this, product)}>
-                        Add to Cart
+                        <FontAwesomeIcon
+                          icon={faCartPlus}
+                          style={{ color: 'white', marginRight: 10 }}
+                          size="md"
+                          title="Shopping Cart"
+                        />
+                        <span style={{ color: 'rgba(0, 0, 0, 0.8)' }}>Add to Cart</span>
                       </button>
                     </div>
                   </li>
